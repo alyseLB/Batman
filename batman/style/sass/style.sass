@@ -1,0 +1,206 @@
+$ylw: #f1c40f
+
+@font-face
+	font-family: batman
+	src: url(../../FONTS/gotham.ttf) format("truetype")
+	
+*
+	font-family: batman
+	padding: 0
+	margin: 0
+
+header
+	background-color: $ylw
+	padding: 10px
+	margin: auto
+	position: fixed
+	border-bottom: 1px solid #f5d556
+	z-index: 1
+	display: flex
+	@media only screen and (max-width: 830px)
+		display: unset
+		padding: 0
+
+.navbar--top
+	@media only screen and (max-width: 830px)
+		display: flex
+		justify-content: space-between
+		padding: 10px
+	.logo-batman
+		width: 10%
+		height: 100%
+	.navbar-mobile
+		display: none
+		@media only screen and (max-width: 830px)
+			display: block
+			float: right
+			cursor: pointer
+		.navbar-mobile--element
+			background-color: black
+			width: 30px
+			height: 3px
+			border-top: solid $ylw 6px
+.navbar.open
+	display: block
+.navbar
+	float: right
+	width: 100%
+	@media only screen and (max-width: 830px)
+		display: none
+
+	.navbar-menu
+		float: right
+		@media only screen and (max-width: 830px)
+			float: unset
+	ul
+		list-style: none
+		margin: 10px
+		padding: 5px
+		@media only screen and (max-width: 830px)
+			margin: 0
+			padding: 0
+		li
+			display: inline-block
+			@media only screen and (max-width: 830px)
+				display: block
+				text-align: center
+				border-bottom: 2px solid #f5d556
+				padding: 15px 0
+			a
+				text-decoration: none
+				color: white
+				padding: 10px
+
+section.gotham
+	height: 350px
+	background-image: url('../../IMG/fond1.png')
+	background-position: center top
+	background-attachment: fixed
+	background-repeat: no-repeat
+	padding-top: 250px
+	background-size: cover
+	@media only screen and (max-width: 600px)
+		height: 240px
+		padding-top: 140px
+
+	p, .title--batman
+		text-align: center
+		padding: 10px
+		color: white
+
+	.title--batman
+		font-size: 3em
+		
+	.title--trait
+		margin: auto
+		border-bottom: 4px solid yellow
+		@media only screen and (min-width: 830px)
+			width: 500px
+		@media only screen and (min-width: 601px)	
+			width: 350px
+		@media only screen and (max-width: 600px)
+			width: 150px
+			
+section.milieu
+	background-color: $ylw
+	margin: auto
+	
+
+	section.container
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 0 100px 0 100px
+		@media only screen and (max-width: 830px)
+			margin: 0
+		
+		p
+			text-align: center
+			margin: auto
+			font-size: 16px
+			padding: 5px
+			@media only screen and (max-width: 600px)
+				font-size: 14px
+		i
+			font-size: 45px
+			@media only screen and (max-width: 600px)
+				font-size: 38px
+		
+		div.pic
+			text-align: center
+			padding: 100px 0
+			width: 100%
+			@media only screen and (max-width: 830px)
+				padding: 50px 30px
+					
+	.separator
+		color: black
+		margin: auto
+		width: 500px
+		border-bottom: solid 3px
+		@media only screen and (max-width: 830px)
+			width: 300px
+			border-bottom: solid 2px
+		@media only screen and (max-width: 600px)
+			width: 100px
+			border-bottom: solid 1px
+	
+section.contact-container
+	background-color: white
+	margin: auto
+	padding: 0
+	display: flex
+	margin-bottom: -3.5px
+	width: 100%
+	@media only screen and (max-width: 600px)
+		display: block
+		background-color: black
+
+	.batsignal, .contact-text, .contact-text h2, .contact-text p
+		width: 50%
+		@media only screen and (max-width: 600px)
+			width: 100%
+
+	.img--batsignal
+		width: 100%
+
+	.img--contact-batman
+		position: bottom
+		width: 80%
+		@media only screen and (max-width: 600px)
+			width: 100%
+
+	.contact-text
+		text-align: center
+		margin: auto
+		display: block	
+
+		h2
+			color: white
+			font-size: 40px
+			position: absolute
+			transform: translate(0, 55%)
+			@media only screen and (max-width: 830px)
+				font-size: 26px
+				transform: translate(0, 100%)
+
+		p
+			font-size: 32px
+			color: $ylw
+			transform: translate(0, -220%)
+			position: absolute
+			@media only screen and (max-width: 830px)
+				font-size: 20px
+				transform: translate(0, -285%)
+							
+footer
+	background-color: $ylw
+	text-align: center
+	padding: 20px
+	margin: auto
+	
+	p
+		display: inline-block
+		padding: 1px
+		@media only screen and (max-width: 600px)
+			font-size: 13px
